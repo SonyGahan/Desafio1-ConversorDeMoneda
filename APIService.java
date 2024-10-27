@@ -9,7 +9,8 @@ import com.google.gson.JsonObject;
 
 public class APIService {
     private String urlBase = "https://v6.exchangerate-api.com/v6/";
-    private String claveApi = "28908e9bc8ac80a32b8b1f5a/latest/";
+    //Ingrese aqui su propia claveApi
+    private String claveApi = "";
 
     public double GestionDeConsulta(String monedaDeOrigen, String monedaDestino, double cantidad) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
